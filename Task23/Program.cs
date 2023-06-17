@@ -4,9 +4,9 @@
 // 5 -> 1, 8, 27, 64, 125
 
 System.Console.WriteLine("Введите число N");
-numberN = Convert.ToInt32(Console.ReadLine());
+int numberN = Convert.ToInt32(Console.ReadLine());
 
-for (int i = 1; i < numberN; i++)
+for (int i = 1; i <= numberN; i++)
 {
-    System.Console.WriteLine(Math.Pow(i,3)+" ");
+    System.Console.Write(Math.Pow(i,3)+" ");
 }
