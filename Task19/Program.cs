@@ -4,15 +4,15 @@
 // 12821 -> да
 // 23432 -> да
 
-string number;
+string? number;
 
 do
 {
     System.Console.Write("Введите пятизначное число ");
     number = Console.ReadLine();             // считываем число в строковую переменную
     int numberYN = Convert.ToInt32(number);  // так проверим что точно число  :)
-
-} while (number.Length != 5); // "выбиваем" из пользователя именно Пятизначное число 
+    
+} while (number?.Length != 5); // "выбиваем" из пользователя именно Пятизначное число 
 
 bool polindrome = true;  // предположим что число полиндром
 
